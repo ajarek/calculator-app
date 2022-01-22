@@ -9,9 +9,9 @@ let sign = []
 function changeThema(e) {
     if (e.target.id !== 'one') {
         const adress = e.target.dataset.thema
-        css.href = "/css/thema" + adress + ".css"
+        css.href = "css/thema" + adress + ".css"
     } else {
-        css.href = "/css/thema1.css"
+        css.href = "css/thema1.css"
     }
 }
 
