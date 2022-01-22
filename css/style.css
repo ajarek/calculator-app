@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Spartan', sans-serif;
+    background-color: var(--Very-dark-desaturated-blue-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 440px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--White);
+    font-size: 2rem;
+}
+
+header .thema {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header .thema .thema-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .thema .thema-wrapper .lab,
+header .thema .thema-wrapper .input-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+header .thema .thema-wrapper .lab {
+    padding: 0 10px;
+}
+
+header .thema .thema-wrapper .input-wrapper {
+    border-radius: 15px;
+    background-color: var(--Very-dark-desaturated-blue-2);
+    padding: 5px;
+}
+
+#one,
+#two,
+#three {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    transition: 0.5s all linear;
+}
+
+#one:checked,
+#two:checked,
+#three:checked {
+    border: 10px solid var(--Red);
+}
+
+.calculator {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculator .calc-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--Very-dark-desaturated-blue-2);
+    padding: 0 2rem;
+    border-radius: 15px;
+}
+
+.calculator .calc-header p {
+    color: var(--White);
+    font-size: 3rem;
+    overflow-x: auto;
+    user-select: none;
+}
+
+.calculator .calc-body {
+    width: 100%;
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    background-color: var(--Very-dark-desaturated-blue-2);
+    border-radius: 15px;
+}
+
+.calculator .calc-body .btn-calc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--White);
+    color: var(--Very-dark-grayish-blue);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.calculator .calc-body .btn-calc:hover,
+.calc-cell1 #btn-clear:hover,
+#btn-del:hover {
+    background-color: var(--Grayish-orange);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.calc-cell1 {
+    width: 100%;
+    height: 55px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.calc-cell2 {
+    width: 100%;
+    height: 55px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.calc-cell1 #btn-clear,
+#btn-del {
+    background-color: var(--Very-dark-grayish-blue);
+    color: var(--White);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.calc-cell2 #btn-equal {
+    background-color: var(--Red);
+    color: var(--White);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+    }
+
+    header .thema {
+        width: 40%;
+
+    }
+}
+
+@media screen and (min-height: 620px) {
+    .calculator .calc-body {
+        height: 70%;
+    }
+
+    .calculator .calc-header {
+        height: 150px;
+    }
+}

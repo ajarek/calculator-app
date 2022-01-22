@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/thema1.css" id="thema">
+  <title>Calculator app</title>
+</head>
+
+<div class="container">
+  <header>
+    <div class="logo">calc</div>
+    <div class="thema">
+      <h6>thema</h6>
+      <div class="thema-wrapper">
+        <div class="lab">
+          <label for="one">1</label>
+          <label for="two">2</label>
+          <label for="three">3</label>
+        </div>
+        <div class="input-wrapper">
+          <input data-thema="1" type="radio" name="radio" id="one" checked>
+          <input data-thema="2" type="radio" name="radio" id="two">
+          <input data-thema="3" type="radio" name="radio" id="three">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="calculator">
+    <div class="calc-header">
+      <p class="display-result"></p>
+    </div>
+    <div class="calc-body">
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-7">7</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-8">8</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-9">9</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-del">del</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-4">4</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-5">5</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-6">6</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-plus">+</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-1">1</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-2">2</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-3">3</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-minus">-</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-dot">.</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-0">0</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-quotient">/</button>
+      </div>
+      <div class="calc-cell">
+        <button class="btn-calc" id="btn-multiplication">x</button>
+      </div>
+      <div class="calc-cell1" id="clear">
+        <button class="btn-calc" id="btn-clear">reset</button>
+      </div>
+      <div class="calc-cell2" id="equal">
+        <button class="btn-calc" id="btn-equal">=</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+
+</html>
